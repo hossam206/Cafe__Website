@@ -1,0 +1,57 @@
+.Menu {
+  padding: 70px 0;
+  text-align: center;
+}
+.MenuHeading {
+  padding: 20px 0;
+}
+.Menu .MenuContent {
+  border: 1px solid #e2dfdd;
+  flex-wrap: wrap;
+  border-radius: 5px;
+  border-image: initial;
+}
+.Menu .MenuContent .MenuFilter {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+.Menu .MenuContent .MenuFilter button {
+  background-color: transparent;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #6c6c6c;
+  display: block;
+  border-radius: 5px;
+  padding: 10px 28px;
+  border: none;
+  transition: 0.4s all ease-in-out;
+}
+.Menu .MenuContent .MenuFilter button:hover {
+  background-color: var(--main-color--);
+  color: #fff !important;
+}
+.avtiveFilterButton {
+  background-color: var(--main-color--) !important;
+  color: #fff !important;
+}
+.MenuContentItems .MenuCompContent {
+  box-shadow: rgba(220, 220, 220, 0.3) 0 14px 40px 0;
+  border-color: #e2dfdd !important;
+}
+.MenuContentItems .itemContent a {
+  color: #000 !important;
+}
+.MenuContentItems .MenuCompContent:hover a {
+  color: #fff !important;
+}
+@media (max-width: 600px) {
+  .Menu .MenuContent {
+    padding: 10px;
+  }
+}

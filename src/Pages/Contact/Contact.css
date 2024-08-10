@@ -1,0 +1,80 @@
+.Contact {
+  padding: 60px 0;
+}
+.ContactContent {
+  position: relative;
+  z-index: 2;
+  box-shadow: rgba(220, 220, 220, 0.3) 12px 14px 40px 0;
+  padding: 80px 75px 11px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e2dfdd;
+  border-image: initial;
+  background: #fff;
+}
+.ContentHead {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.ContactImg {
+  max-width: 80px;
+  height: 70px;
+  margin-right: 30px;
+  flex: 0 0 80px;
+  border: 1px solid #e2dfdd;
+  border-radius: 10px;
+  text-align: center;
+}
+.ContentHead img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.3s ease-out 0;
+  margin-top: 12px;
+}
+.ContentHead h4 {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000;
+  line-height: 1.4;
+  font-family: "Bebas Neue", cursive;
+  margin: 0;
+}
+.ContentHead a {
+  color: #737373;
+  font-size: 15px;
+  display: block;
+  line-height: 24px;
+  text-decoration: none;
+}
+.ContactBody {
+  padding: 60px 0;
+}
+.ContactBody input,
+textarea {
+  font-size: 15px;
+  width: 100%;
+  box-shadow: rgba(220, 220, 220, 0.3) 0 14px 40px 0;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e2dfdd;
+  border-image: initial;
+  padding: 12px 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+.ContactBody textarea {
+  min-height: 200px;
+}
+.ContactBody {
+  text-align: center;
+}
+@media (max-width: 600px) {
+  .ContentHead {
+    margin-bottom: 23px;
+  }
+  .ContactContent {
+    padding: 80px 29px 11px 30px;
+  }
+}

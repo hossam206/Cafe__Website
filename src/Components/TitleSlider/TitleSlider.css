@@ -1,0 +1,45 @@
+.TileSlider {
+ background-color: #7F7F7F;
+  height: 400px;
+  margin: 0;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  background-position: center center;
+}
+.TileSlideroverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.TileSliderComp {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 2;
+}
+.TileSliderComp a {
+  transition: 0.3s all ease-in-out;
+  display: inline-block;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: #fff;
+}
+.TileSliderComp a span {
+  color: rgb(199, 161, 122);
+  font-weight: 600;
+}
+.TileSliderComp a:hover {
+  transform: translateX(-10px) !important;
+}

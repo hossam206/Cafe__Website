@@ -1,0 +1,192 @@
+.PopularMenu {
+  padding: 80px 0;
+  background-color: var(--bg-color--);
+  text-align: center;
+}
+.PopularMenu h2 {
+  padding-bottom: 20px;
+}
+.CofeeMachine {
+  background-color: var(--bg-color--);
+  padding: 40px 0;
+}
+.MachineImg {
+  text-align: right;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.MachineImg svg {
+  position: absolute;
+  top: -10px;
+  right: 120px;
+  background-color: var(--white-color--);
+  padding: 4px;
+  border-radius: 50%;
+  font-size: 24px;
+  cursor: pointer;
+}
+.MachineImgDetails {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1170px;
+  right: 0;
+  height: 500px;
+  transition: all 0.3s ease 0;
+  margin: auto;
+  background-color: #fff;
+  z-index: 999;
+  border-radius: 20px;
+  padding: 30px;
+}
+.MachineImgDetails .closeIcon {
+  color: var(--bg-color--);
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  transition: all 0.3s ease 0;
+  font-size: 25px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: -13px;
+}
+.MachineImgDetails .closeIcon:hover {
+  background-color: var(--main-color--);
+}
+.MachineImgDetailsImg {
+  width: 100%;
+  height: 100%;
+}
+.MachineImgDetailsContent {
+  padding: 20px;
+}
+.MachineImgDetailsContent svg {
+  color: var(--main-color--);
+  margin-right: 4px;
+}
+.MachineImgDetailsContent p {
+  display: inline-block;
+}
+.Quantity {
+  padding: 20px 0;
+}
+.Quantity span {
+  margin-right: 10px;
+  color: #010103;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.Quantity input {
+  width: 100px;
+  min-height: 40px;
+  padding: 0 10px;
+  border: 1px solid gray;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+.MachineImgDetails ul {
+  padding: 10px 0;
+  list-style: none;
+}
+.MachineImgDetails ul li {
+  padding: 8px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #010103;
+}
+.MachineImgDetails ul li span {
+  color: gray;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 4;
+}
+.PopularProduct {
+  padding: 100px 0;
+  background-image: url(../../Images/footer/pp-bg-3-1.jpeg);
+  background-size: cover;
+  background-position: center;
+  height: auto;
+}
+.PopularProduct .ViewAllProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.PopularProduct .PopularProductComponents {
+  padding: 80px 0;
+}
+.BookTable {
+  padding: 50px 0;
+  background-color: var(--bg-color--);
+  height: auto;
+}
+.BookTableImg {
+  width: 100%;
+  height: 100%;
+}
+.BookTableImg img {
+  width: 100%;
+  height: 100%;
+}
+.BookingTable {
+  background-color: #13131a;
+  padding: 60px 0;
+  text-align: center;
+}
+.BookPersonNum {
+  position: relative;
+}
+.BookPersonNum svg {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+  color: #a7a7a7;
+}
+.NewArticle {
+  padding: 40px 0 120px;
+  text-align: center;
+  background-color: #0b0809;
+}
+.showComp {
+  visibility: visible;
+}
+@media (max-width: 600px) {
+  .MachineImg {
+    text-align: center;
+    margin-top: 40px;
+  }
+}
+@media (max-width: 990px) {
+  .MachineImgDetails {
+    width: 100%;
+    height: 100%;
+    overflow: scroll;
+    border-radius: 0;
+  }
+  .PopularProduct .ViewAllProduct {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .Quantity {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .Quantity input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

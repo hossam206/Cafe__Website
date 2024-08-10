@@ -1,0 +1,158 @@
+.AboutCafena {
+  padding: 90px 0;
+  background-color: var(--white-color--);
+  position: relative;
+}
+.AboutCafenaImg {
+  position: relative;
+}
+.AboutCafenaShape span {
+  position: absolute;
+  top: 0;
+}
+.Aboutinfo {
+  margin-top: 50px;
+}
+.AboutCafenaContent .Aboutinfo ul {
+  list-style: none;
+  margin-top: 25px;
+  color: #1b2026;
+  font-size: 18px;
+  font-weight: 500;
+  transition: all 0.3s ease 0;
+  font-size: 15px;
+}
+.AboutCafenaContent .Aboutinfo ul li:not(:last-child) {
+  margin-bottom: 18px;
+}
+.AboutCafenaContent .Aboutinfo .AboutListIcon {
+  color: #292d32;
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 7px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #e2dfdd;
+  border-image: initial;
+  transition: all 0.3s ease 0;
+}
+.AboutCafenaContent .Aboutinfo ul li:hover .AboutListIcon {
+  background-color: #292d32;
+  color: #fff;
+}
+.BestService {
+  padding: 40px 0;
+}
+.BestService .BestServiceHeading {
+  text-align: center;
+}
+.BestService .BestServiceContent {
+  padding: 40px 0;
+}
+.BestServiceContent .BestServiceItem {
+  border: 1px solid #e2dfdd;
+  border-image: initial;
+  border-radius: 10px;
+  padding: 50px 45px;
+  transition: all 0.3s ease 0;
+  text-align: center;
+}
+.BestServiceItem .icon {
+  z-index: 1;
+  position: relative;
+  max-width: 75px;
+  margin: 0 auto 30px;
+  position: relative;
+}
+.BestServiceItem .icon::after {
+  width: 45px;
+  height: 45px;
+  content: "";
+  position: absolute;
+  left: 30px;
+  top: 25px;
+  z-index: -1;
+  background: #eddfd1;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out 0;
+}
+.BestServiceContent .BestServiceItem:hover .icon::after {
+  transform: translateX(-30px);
+}
+.BestServiceContent .BestServiceItem .ItemContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.BestServiceContent .BestServiceItem a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  color: #776c62;
+  border: 1px solid #e2dfdd;
+  border-image: initial;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0;
+}
+.BestServiceContent .BestServiceItem:hover a,
+.BestServiceContent .BestServiceItem:hover a svg {
+  background-color: var(--main-color--) !important;
+  color: #fff !important;
+}
+.BestServiceContent .BestServiceItem a svg {
+  font-family: "Font Awesome 5 Pro";
+  color: #878585;
+}
+.TRYBsetCofee {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 60px;
+  position: relative;
+}
+.TRYBestCofeeImg {
+  width: 100%;
+  height: 100%;
+}
+.TRYBestCofeeContent {
+  position: relative;
+  z-index: 2;
+  box-shadow: rgba(220, 220, 220, 0.3) 0 14px 40px 0;
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid #e2dfdd;
+  height: 100%;
+  border-image: initial;
+  margin-left: -20px;
+  padding: 80px 130px 80px 100px;
+}
+.AboutOurChefs {
+  text-align: center;
+  padding: 30px 0 90px;
+}
+@media (max-width: 600px) {
+  .AboutCafenaContent .Aboutinfo ul li {
+    font-size: 14px;
+  }
+  .BestServiceContent .BestServiceItem {
+    margin-bottom: 17px;
+  }
+  .TRYBsetCofee {
+    flex-direction: column;
+    justify-content: flex-end !important;
+    padding: 33px 0 !important;
+  }
+  .DarkTitle {
+    font-size: 30px !important;
+  }
+  .TRYBestCofeeContent {
+    padding: 34px;
+  }
+}

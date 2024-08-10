@@ -1,0 +1,96 @@
+.MenuComp {
+    padding: 19px 0px;
+}
+.MenuComp .MenuCompContent {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 36px;
+  padding-bottom: 36px;
+  padding-right: 30px;
+  margin-left: 90px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(50, 50, 61);
+  border-image: initial;
+  transition: all 0.3s ease 0s;
+}
+.MenuComp .MenuCompContent::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: rgb(19, 19, 26);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+  z-index: 1;
+  opacity: 0.6;
+}
+.MenuCompContent:hover:after {
+  width: 100%;
+}
+.MenuComp .MenuCompContent .ItemImg {
+  width: 85px;
+  height: 85px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -40px;
+  z-index: 2;
+ 
+}
+.MenuComp .MenuCompContent .ItemImg img
+{
+  width: 100%;
+  height: 100%;
+    border-radius: 50%;
+}
+.MenuComp .MenuCompContent .itemContent {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding-right: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.MenuComp .MenuCompContent .itemContent a {
+  font-family: "Bebas Neue", cursive;
+  text-decoration: none;
+  z-index: 2;
+  position: relative;
+  color:var(--white-color--)
+}
+.MenuComp .MenuCompContent .itemContent a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0px;
+  height: 4px;
+  background-color: var(--white-color--);
+  transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1) 0s;
+}
+.MenuComp .MenuCompContent .itemContent a:hover:after {
+  width: 100%;
+}
+.MenuCompContent .itemContent .ItemPrice {
+  color: rgb(199, 161, 122);
+  font-size: 25px;
+  font-family: "Bebas Neue", cursive;
+  z-index: 2;
+}
+/* start media uery */
+@media (max-width: 700px) {
+  .MenuComp .MenuCompContent {
+    margin-left: 10px;
+    height: 96px;
+    padding: 40px 0px 0px 10px;
+  }
+  .MenuComp .MenuCompContent .ItemImg {
+    left: 50%;
+    top: 0px;
+    transform: translate(-50%, -50%);
+  }
+  .MenuComp .MenuCompContent .itemContent a {
+    font-size: 20px;
+  }
+}

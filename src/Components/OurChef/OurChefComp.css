@@ -1,0 +1,70 @@
+.ChefItem {
+  border: 1px solid rgb(226, 223, 221);
+  border-image: initial;
+  border-radius: 10px;
+  padding: 38px 28px;
+  transition: all 0.4s ease 0s;
+}
+.chefHeading {
+  position: relative;
+  min-height: 310px;
+}
+.chefHeading .chefImg img {
+  min-height: 310px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 60px 60px 60px 0px;
+  margin-bottom: 20px;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1) 0s;
+  z-index: 1;
+}
+.ChefItem:hover .chefImg img {
+  border-radius: 0px 60px 60px 60px;
+}
+.chefSocial ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  align-items: center;
+  margin-top: 4px;
+}
+.chefSocial ul li {
+  padding: 4px 6px;
+  border: 1px solid #e3e3db;
+  margin-right: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+      background: #f9f9f900;
+      transition: .3s all ease-in-out;
+}
+.chefSocial ul li:hover
+{
+  background-color:#000 ;
+  color:#fff;
+}
+.showSocialLinks {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: scale(1) !important;
+}
+
+.chefInfo .name {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+.chefInfo .experience {
+  color: rgb(199, 161, 122);
+  letter-spacing: 2px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* start media uery */
+@media (max-width: 600px) {
+  .ChefItem {
+    margin-bottom: 10px;
+  }
+}

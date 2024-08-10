@@ -1,0 +1,18 @@
+.whiteNavbar {
+  background-color: #fff;
+  height: auto;
+  padding: 26px 10px;
+  border-bottom: 1px solid rgb(231, 231, 231);
+  position: relative;
+  display: block;
+}
+.whiteNavbar .Navbar-content ul li a,
+.whiteNavbar .NavbarLinks svg {
+  color: #000;
+}
+
+@media (max-width: 1080px) {
+  .whiteNavbar {
+    display: none;
+  }
+}

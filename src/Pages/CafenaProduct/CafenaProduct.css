@@ -1,0 +1,98 @@
+.CafennaProduct {
+  padding: 50px 0;
+}
+.ShowingItems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  border: 1px solid #e2dfdd;
+  padding: 5px 20px;
+}
+.ShowingItems select {
+  width: 20%;
+  border: none;
+  background: none;
+  padding: 12px;
+  margin: 1px;
+  cursor: pointer;
+  color: #000;
+}
+.CaffenaProductItems {
+  padding: 40px 0;
+}
+.CaffenaProductItems .Categories .NewArticleCompImg {
+  max-width: 60px;
+  height: 100%;
+  border: 1px solid #e2dfdd;
+  max-width: 100%;
+}
+.CaffenaProductItems .PopularProductComp {
+  border: 1px solid #e7e7e7;
+  border-radius: 12px;
+  margin-bottom: 28px;
+  box-shadow: rgba(220, 220, 220, 0.3) 0 14px 40px 0;
+  height: 372px;
+}
+.CaffenaProductItems .PopularProductComp .PopularProductCompContent {
+  margin-top: 0;
+}
+.CaffenaProductItems
+  .PopularProductComp
+  .PopularProductCompContent
+  .PopularProductCompIcons {
+  margin-bottom: 10px;
+}
+.CaffenaProductItems
+  .PopularProductComp
+  .PopularProductCompContent
+  .PopularProductCompIcons
+  svg:hover {
+  background: transparent;
+  color: #a7a7a7;
+  border-color: #000;
+}
+.CaffenaProductItems .PopularProductComp .PopularProductCompImg {
+  width: auto;
+  height: 164px;
+  margin: auto;
+}
+.CaffenaProductItems .PopularProductComp .PopularProductCompImg img {
+  width: 100%;
+  height: 100%;
+}
+.CaffenaProductItems .PopularProductComp .PopularProductCompDetails a {
+  font-size: 19px;
+  color: #000;
+  font-family: "Bebas Neue", cursive;
+}
+.CaffenaProductItems .PopularProductComp .PopularProductCompDetails p {
+  margin: 8px 0;
+  padding: 0;
+  font-size: 17px;
+  text-transform: capitalize;
+}
+.CaffenaProductItems .PopularProductComp:hover {
+  background: transparent;
+}
+.CaffenaProductItems .PopularProductCompDetails h4 {
+  color: #000;
+}
+@media (max-width: 600px) {
+  .CaffenaProductItems .PopularProductComp .PopularProductCompImg {
+    width: 100%;
+    margin-top: -18px;
+  }
+  .CaffenaProductItems .PopularProductCompDetails {
+    margin-top: 29px;
+  }
+  .ShowingItems select {
+    width: 35%;
+    border: none;
+    background: none;
+    padding: 2px;
+    margin-top: 6px;
+    cursor: pointer;
+    color: #000;
+  }
+}

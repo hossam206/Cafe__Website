@@ -1,0 +1,120 @@
+.NavbarMobile {
+  background-color: var(--bg-color--);
+  padding: 20px 10px;
+  border-bottom: 1px solid #32323d;
+  position: relative;
+  display: none;
+}
+.NavbaMobileContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.NavbarMobileIcons {
+  display: flex;
+  flex-direction: row;
+}
+.NavbaMobileContent .NavbarMobileIcons svg {
+  color: var(--white-color--);
+  margin-right: 12px;
+  font-size: 26px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: inline-block;
+}
+.NavbarMobileIcons .navbarmobilecart::after {
+  position: absolute;
+  top: -20px;
+  right: 10px;
+  content: attr(data-text-preloader);
+  background-color: #80a093;
+  color: #fff;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 15px;
+}
+/* START ASIDE  */
+.asideContent {
+  width: 100%;
+}
+.asidechoose {
+  display: flex;
+  justify-content: space-around;
+}
+.asidechoose span {
+  flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  max-width: 50%;
+  font-size: 18px;
+  color: #010103;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+
+  margin-right: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* start NavbarMobile Menu */
+.NavbarMobileMenu ul {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.NavbarMobileMenu ul li {
+  list-style: none;
+}
+.NavbarMobileMenu ul li a {
+  width: 100%;
+  padding: 5px;
+  margin-top: 10px;
+  text-align: left;
+  color: #000;
+  border-top: 1px solid rgba(255, 255, 255, 0.5) !important;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  color: #000 !important;
+}
+.NavbarMobileMenu ul li a svg {
+  position: absolute;
+  right: 0;
+}
+.NavbarMobileMenu ul li ul {
+  height: 0;
+  transition: height 0.3s ease-in-out;
+  overflow: hidden;
+}
+.openNavbarMenuul {
+  height: 100% !important;
+}
+.activeNavbarMobile {
+  background: #010103 !important;
+  color: #ffffff !important;
+}
+@media (max-width: 1080px) {
+  .NavbarMobile {
+    display: block;
+    /* background-color: #fff;
+    border-bottom: 1px solid rgb(230, 230, 230);
+    box-shadow: rgba(255, 255, 255, 0.3) 0px 20px 40px 0px; */
+  }
+}

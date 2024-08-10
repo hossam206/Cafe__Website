@@ -1,0 +1,75 @@
+.BestCofeeSec {
+  padding: 100px 0px;
+  background-color: var(--bg-color--);
+  position: relative;
+}
+
+.BestCofeeContent {
+  position: relative;
+  min-height: 300px;
+  height: auto;
+  padding: 10px 10px;
+  background-image: url("../../Images/HomePage/BestCofee/f-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(67, 67, 80);
+  border-image: initial;
+}
+.BestCofeeContent::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 0px;
+  background-color: var(--main-color--);
+  transition: .4s all ease-in-out;
+}
+.BestCofeeContent:hover::after
+{
+    width: 100%;
+}
+.BestCofeeSec .second {
+  background-image: url("../../Images/HomePage/BestCofee/f-2.jpeg");
+}
+.BestCofeeSec .third {
+  background-image: url("../../Images/HomePage/BestCofee/f-3.jpeg");
+}
+.Content {
+  padding: 25px 40px 25px 40px;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+.Content span {
+  color: rgb(199, 161, 122);
+  margin-top: 0px;
+  font-size: 15px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+.Content p {
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  opacity: 0.8;
+}
+.shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.shape img {
+  width: 100%;
+  height: 100%;
+}
+@media (max-width:600px) {
+ .BestCofeeContent
+ {
+  margin-bottom: 20px;
+ } 
+}

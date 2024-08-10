@@ -1,0 +1,68 @@
+.CheckOut {
+  padding: 120px 0;
+}
+.checkoutContent {
+  border: 1px solid #e2dfdd;
+  padding: 95px 70px;
+  border-radius: 10px;
+}
+.PymentMethood {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.PymentMethood h4 {
+  font-size: 24px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+}
+.PymentMethood label {
+  color: #000;
+  font-weight: 500;
+  position: relative;
+  text-decoration: none;
+  padding: 0;
+  margin-left: 10px;
+}
+.PymentMethood input {
+  width: 18px;
+  height: 18px;
+  background: #000 !important;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+input[type="radio"] {
+  accent-color: #000;
+}
+.customerDetails {
+  padding: 20px 0;
+}
+.customerDetails .from-group {
+  margin-top: 20px;
+}
+.customerDetails label {
+  display: block;
+  margin-top: 10px;
+  color: #000;
+  font-weight: 500;
+}
+.customerDetails input,
+.customerDetails textarea {
+  width: 100%;
+  background-color: #fbfaf7;
+  color: #848177;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+  padding: 10px 15px;
+}
+.customerDetails textarea {
+  min-height: 160px;
+}
+@media (max-width: 600px) {
+  .checkoutContent {
+    padding: 60px 29px;
+  }
+}

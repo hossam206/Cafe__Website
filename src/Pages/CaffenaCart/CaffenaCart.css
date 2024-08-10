@@ -1,0 +1,177 @@
+.CaffenaCart {
+  padding: 100px 0 50px;
+}
+.EMPTYCARTimG {
+  height: auto;
+  text-align: center;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.EMPTYCARTimG a {
+  display: block;
+  color: #fff;
+  background-color: #747171;
+  width: 164px;
+  text-align: center;
+  padding: 4px 3px;
+  border-radius: 32px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s all ease-in;
+}
+.EMPTYCARTimG a:hover {
+  background-color: #007bff;
+}
+.ProductTable {
+  border: 1px solid #e2dfdd;
+  border-radius: 10px;
+  width: 100%;
+  overflow: auto;
+}
+.table thead th {
+  padding: 20px 0 22px 18px;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+}
+.table tbody tr:not(:last-child) {
+  border-bottom: 1px solid #e2dfdd;
+}
+.product_Image {
+  width: 100px;
+  height: 100px;
+}
+.product_Image img {
+  width: 100%;
+  height: 100%;
+}
+.table td {
+  vertical-align: middle;
+  padding: 10px;
+}
+.table td,
+.table td a {
+  color: #000;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.table td input {
+  width: 100px;
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+  border: none;
+}
+.table .product_cancel span {
+  display: inline-block;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+}
+.count {
+  display: flex;
+  align-items: center;
+}
+.count span {
+  border: 2px solid #d3d3d3;
+  margin: 3px;
+  border-radius: 50%;
+  padding: 3px;
+  width: 29px;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s all cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.count span:hover {
+  background-color: var(--main-color--);
+  border: 2px solid var(--main-color--);
+  color: #000;
+}
+.count small {
+  margin: 0 10px;
+  font-size: 15px;
+  font-weight: 700;
+}
+.table .product_cancel span svg:hover {
+  color: red;
+}
+.ApplyCopon {
+  padding: 60px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 747px;
+}
+.ApplyCopon input {
+  color: #6c6c6c;
+  font-weight: 600;
+  font-size: 14px;
+  border: none;
+  padding: 4px 11px;
+  background: #f7f7f7;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+.ApplyCopon a {
+  color: #000;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+  margin-bottom: 20px;
+  margin-left: 5px;
+}
+.ApplyCopon a:hover {
+  color: #c7a16b;
+}
+.CartTotal {
+  padding: 20px 0;
+  text-align: center;
+  margin-top: 50px;
+}
+.CartTotal h4 {
+  text-transform: capitalize;
+  font-size: 24px;
+  font-family: Jost, sans-serif;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.Total {
+  background-color: #fbfaf9;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  color: #6f7987;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 3px 25px;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .table td {
+    padding: 10px 29px;
+    width: 100%;
+  }
+  .ApplyCopon {
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .EMPTYCARTimG h4 {
+    font-size: 20px;
+    padding: 0;
+    line-height: 26px;
+    text-transform: capitalize;
+  }
+  .count {
+    margin-left: -20px;
+  }
+}

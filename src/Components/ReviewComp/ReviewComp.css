@@ -1,0 +1,39 @@
+.ReviewComp {
+  padding: 20px 0px;
+  border-bottom: 1px solid rgb(226, 223, 221);
+}
+.ReviewCompContent {
+  display: flex;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+.ReviewCompContent .ReviewerDetails {
+  margin-top: 19px;
+  margin-left: 13px;
+  
+}
+.ReviewCompContent .ReviewrImg {
+  max-width: 80px;
+  flex: 0 0 80px;
+}
+.ReviewCompContent .ReviewrImg img {
+  width: 100%;
+  height: auto;
+}
+.ReviewerDetails h5 {
+  text-transform: capitalize;
+  font-weight: 600;
+  font-size: 14px;
+}
+.ReviewerDetails h5 span {
+  font-weight: 400;
+  color: rgb(108, 108, 108);
+  font-size: 14px;
+  margin-left: 5px;
+}
+.ReviewerDetails p {
+  color: rgb(108, 108, 108);
+  line-height: 26px;
+  font-family: cursive;
+}

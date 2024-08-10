@@ -1,0 +1,85 @@
+.RecentBlogcoMP {
+  border: 1px solid #e2dfdd;
+  padding: 30px 35px;
+  padding-bottom: 40px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.RecentBlogImg img {
+  transition: 0.3s;
+  width: 100%;
+  border-radius: 10px;
+  max-height: 365px;
+  object-fit: cover;
+  transition: 0.3s all ease-in-out;
+}
+.RecentBlogImg img:hover {
+  transform: scale(1.1);
+}
+.RecentBlogIcons {
+  margin-top: 25px;
+}
+.RecentBlogIcons ul li {
+  list-style: none;
+  display: inline-block;
+  position: relative;
+}
+.RecentBlogIcons ul li:not(:last-child) {
+  margin-right: 50px;
+}
+.RecentBlogIcons ul li:not(:last-child):after {
+  right: -30px;
+  height: 16px;
+  background-color: #6c6c6c;
+  position: absolute;
+  content: "";
+  width: 1px;
+  top: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.RecentBlogIcons ul li svg {
+  font-size: 22px;
+  padding-right: 5px;
+  margin-left: 20px;
+}
+.RecentBlogIcons ul li span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #6c6c6c;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+}
+
+.RecentBlogIcons ul li span:hover {
+  color: var(--main-color--);
+}
+.RecentBlogAuthor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 65%;
+  margin-top: 30px;
+}
+.RecentBlogAuthor .authordetail {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+/* start media uery */
+@media (max-width: 600px) {
+  .RecentBlogIcons ul li:not(:last-child):after {
+    display: none;
+  }
+  .RecentBlogAuthor {
+    flex-direction: column;
+  }
+  .RecentBlogAuthor button {
+    margin-bottom: 20px;
+  }
+}

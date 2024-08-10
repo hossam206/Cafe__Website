@@ -1,0 +1,164 @@
+.Footer {
+  padding:  0px 0px 0px 0px;
+  background-color: var(--bg-color--);
+  position: relative;
+}
+.GoToTop {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+}
+.GoToTop span {
+  transition: all 0.3s ease 0s;
+  text-transform: uppercase;
+  color: rgb(167, 167, 167);
+  margin-bottom: 0px;
+}
+.GoToTop::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-top: 1px solid rgb(50, 50, 61);
+}
+.GoToTop svg {
+  background-color: rgb(1, 1, 3);
+  align-items: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  width: 34px;
+  height: 34px;
+  transition: all 0.3s ease 0s;
+  border: 1px solid rgb(167, 167, 167);
+  border-radius: 50%;
+  margin-top: -10px;
+  z-index: 2;
+  cursor: pointer;
+}
+.GoToTop svg:hover {
+  background-color: #d3ad7f;
+}
+.FooterContent {
+  padding: 80px 0px 30px 0px;
+}
+.ContactDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Phone,
+.Address {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Phone svg,
+.Address svg {
+  color: #d3ad7f;
+  font-size: 27px;
+  margin-right: 7px;
+}
+.Phone span,
+.Address span {
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  padding-right: 7px;
+  font-size: 17px;
+}
+.Phone p,
+.Address p {
+  color: rgb(167, 167, 167);
+  text-decoration: none;
+}
+.ContactDetails form {
+  display: flex;
+  border-bottom: 1px solid rgb(50, 50, 61);
+}
+.ContactDetails form input {
+  font-size: 14px;
+  width: 100%;
+  color: rgb(167, 167, 167);
+  border-style: none none none;
+  border-image: initial;
+  background: transparent;
+  padding: 0px 15px 15px 20px;
+}
+.ContactDetails form a {
+  display: flex;
+  color:var(--white-color--)
+}
+.ContactDetails form a:hover {
+  color: #d3ad7f !important;
+}
+.footerLogo {
+  margin-top: 40px;
+}
+.FooterInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid rgb(50, 50, 61);
+}
+.FooterInfo p {
+  color: rgb(255, 255, 255);
+  font-size: 15px;
+}
+.FooterInfo .ConatctSocial ul li {
+  margin-top: 0;
+}
+.FooterLinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 0px 0px 0px;
+}
+.FooterLinksContent ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+}
+.FooterLinksContent ul li a {
+  margin-right: 33px;
+color:var(--white-color--);
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+}
+.FooterLinksContent ul li a:hover {
+  color: var(--main-color--) !important;
+}
+.FooterLinksGoUp:hover {
+  color: var(--main-color--) !important;
+}
+/* start media uery */
+@media (max-width: 990px) {
+  .ContactDetails {
+    flex-direction: column;
+  }
+  .FooterInfo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .FooterContent {
+    padding: 29px 0px;
+  }
+  .ContactDetails > div {
+    margin-bottom: 10px;
+  }
+  .FooterLinks {
+    flex-direction: column;
+    align-items: center;
+  }
+  .FooterLinksContent ul li a {
+    font-size: 13px;
+  }
+}
